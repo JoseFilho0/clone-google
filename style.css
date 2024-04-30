@@ -4,11 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    width: 1366px;
-    height: 641px;
-}
-
 .menu{
     display: flex;
     justify-content: end;
@@ -139,4 +134,94 @@ a {
 .personalizar img {
     width: 17px;
     margin-right: 8px;
+}
+
+@media(max-width:760px) {
+    .personalizar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:480px) {
+    .logo img {
+        width: 220px;
+    }
+
+    .barra_pesquisa {
+        width: 300px;
+    }
+
+    .barra_pesquisa img {
+        width: 18px;
+    }
+
+    .adicionar_atalho {
+        display: flex;
+        text-align: center;
+        width: 90px;
+    }
+
+    .adicionar_atalho img {
+        width: 40px;
+        margin-top: 13px;
+    }
+}
+
+@media(max-width:320px) {
+    ul {
+    gap: 10px;
+    margin-top: 15px;
+    margin-right: 7px;
+    }
+    
+    ul img {
+        width: 20px;
+        height: 20px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .barra_pesquisa {
+        padding: 9px;
+        width: 240px;
+    }
+
+    .barra_pesquisa img {
+        width: 14px;
+    }
+
+    .barra_pesquisa input {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .adicionar_atalho {
+        width: 60px;
+    }
+
+    .adicionar_atalho img {
+        width: 30px;
+    }
+
+    .adicionar_atalho h3 {
+        font-size: 10px;
+    }
+
+    .personalizar button{
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .personalizar img {
+        width: 14px;
+    }
 }
